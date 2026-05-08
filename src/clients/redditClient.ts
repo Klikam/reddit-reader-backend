@@ -9,6 +9,8 @@ const handleResponse = (res: Response): Promise<string> => {
 };
 
 export const getRedditFeed = async (subreddit: string): Promise<string> => {
-  const res = await fetch(BASE_URL + subreddit);
+  const url = BASE_URL + '/r/' + subreddit + '/.rss';
+  const res = await fetch(url);
+  console.log(`Calling ${url}`);
   return handleResponse(res);
 };

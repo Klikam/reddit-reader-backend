@@ -7,7 +7,7 @@ import {
   deleteItem,
 } from '../controllers/itemController.ts';
 
-const router = Router();
+const router: Router = Router();
 
 router.get('/', getItems);
 router.get('/:id', getItemById);

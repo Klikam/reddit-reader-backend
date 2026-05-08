@@ -6,7 +6,7 @@ import {
 } from 'express';
 import { getSubredditPosts } from '../services/redditService.ts';
 
-const router = Router();
+const router: Router = Router();
 
 router.get(
   '/:subreddit',
