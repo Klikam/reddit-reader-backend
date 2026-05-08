@@ -1,5 +1,5 @@
 import { XMLParser } from 'fast-xml-parser';
-import { getRedditFeed } from '../clients/redditClient.ts';
+import { getRedditFeed } from '../clients/redditClient.js';
 import type { RedditPost } from '../models/reddit.ts';
 
 const TEST_REACT_RSS = 'r/react/.rss';
